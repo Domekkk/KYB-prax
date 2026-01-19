@@ -1,0 +1,4 @@
+Precital som si /challenge/cimg
+Videl som, ze header ma byt 4 miestny
+dal som pomocou echo do example.cimg "abcd" a bol nespravny magic number
+tak ten /challenge/cimg precital znovu a videl som ze magic number ma byt to v b"" a potom to fungovalo (/challenge/cimg example.cimg)
