@@ -1,0 +1,10 @@
+#!/bin/python
+with open("example.cimg", "wb") as f:
+
+    f.write(b"cIMG")
+    f.write((2).to_bytes(4,"little"))
+    f.write((75).to_bytes(8,"little"))
+    f.write((22).to_bytes(8,"little"))
+
+    pixel = bytes([0x8C, 0x1D, 0x40, ord("A")])
+    f.write(pixel * (75*22))
