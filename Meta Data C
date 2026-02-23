@@ -1,0 +1,7 @@
+#!/bin/python
+with open("example.cimg", "wb") as f:
+    f.write(b"[M4G")
+    f.write((1).to_bytes(8,"little"))
+    f.write((40).to_bytes(2,"little"))
+    f.write((14).to_bytes(1,"little"))
+    f.write(b"q" * (40*14))
